@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lista de Contactos</title>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" >
+    $(document).ready(function() {
+
+        $.get("http://187.177.233.44/jperez/test/view_contact.php", function(data){
+
+                $("#list").html(data);
+
+        });
+    });
+</script>
+</head>
+<body>
+
+<div id = "list"> </div>
+
+</body>
+</html>
